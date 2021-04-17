@@ -49,7 +49,8 @@ async function openProject (projectPath) {
 
   const srcPath = path.join(session.projectPath, 'emscripten-build', 'bin', session.projectName)
   const server = httpServer.createServer({
-    root: srcPath
+    root: srcPath,
+    cache: -1
   })
 
   while (true) {
