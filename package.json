@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "http-server": "^0.12.3",
-    "electron-store": "^7.0.3"
+    "electron-store": "^7.0.3",
+    "electron-tabs": "^0.15.0",
   }
 }

@@ -4,3 +4,16 @@
 // `nodeIntegration` is turned off. Use `preload.js` to
 // selectively enable features needed in the rendering
 // process.
+const TabGroup = require('electron-tabs')
+
+const tabGroup = new TabGroup({
+  newTab: {
+    title: 'New Tab'
+  }
+})
+
+tabGroup.addTab({
+  title: 'Google',
+  src: 'http://google.com',
+  active: true
+})
